@@ -28,6 +28,7 @@ public class DeliveryController implements DeliveryApi {
 
     @Override
     public ResponseEntity<DeliveryDto> getDeliveryById(Long id) {
+        System.out.println("1111111111111");
         return new ResponseEntity<>(
                 deliveryService.getDeliveryById(id),
                 HttpStatus.OK
